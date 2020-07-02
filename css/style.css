@@ -1,0 +1,253 @@
+/* 공용 */
+body {width: 100%;margin: 0 auto;}
+.container {padding: 0 20px;width: 1020px;margin: 0 auto;}
+.hidden {display: none;}
+.show {display:block;}
+.clear {clear:both;}
+/* HEADER */
+.header {position: relative;height: 140px;}
+.header .topmenu {overflow:hidden;padding-top: 30px;}
+.header .topmenu > ul {text-align: center;overflow:hidden ;float: left;margin-left: 380px;}
+.header .topmenu > ul > li {float: left;padding: 0 9px;}
+.header .topmenu > ul > li > a {color: #777;}
+.header .topmenu .selectbox {float: left;position: relative;
+    border: none;z-index: 1;overflow: hidden;height: 20px;}
+.header .topmenu .selectbox .select {float: left;width: 90px;overflow: hidden;}
+.header .topmenu .selectbox .select > li {float: left; position: relative;text-align: center;}
+.header .topmenu .selectbox .select > li a {display: inline-block;color: #9f9f9f;}
+
+.header .topmenu .selectbox .select > li:before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: -15px;
+    width: 0;
+    height: 0;
+    margin-top: -1px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #9f9f9f;
+    cursor: pointer;
+}
+.header .topmenu .selectbox.active .select > li a:before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: -15px;
+    width: 0;
+    height: 0;
+    margin-top: -1px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #398aee;
+}
+
+.header .topmenu .selectbox .select li .select_option {
+    position: absolute;right:-15px;top: 30px;
+    background: #fff;
+    border-top:2px solid #398aee;
+    border-bottom:2px solid #aaa;
+    padding: 10px 0;
+    z-index: 5;
+}
+.header .topmenu .selectbox .select li .select_option li {
+    padding: 10px 30px;
+}
+.header .topmenu .selectbox .select li .select_option li a {
+    display: block; width: 100px; color: #343434; 
+    position: relative;
+}
+.header .topmenu .selectbox .select li .select_option li a:before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #dcdcdc;
+    position: absolute;left: 0;bottom: -11px;
+}
+.header .topmenu .selectbox .select li .select_option li.last a:before{
+    background: none;
+}
+.header .topmenu .selectbox .select .global .select_option li{display:block ;}
+.header .topmenu .selectbox ul>li.active{
+    color: #398aee;
+}
+
+.header .topmenu .icon {float: left;margin: 0 5px;cursor: pointer;outline: none}
+.header .topmenu .icon button {cursor: pointer;outline: none;background:none;}
+.header .topmenu .icon button i {font-size: 18px;color: #636363;}
+
+
+.header .mainmenu {position: ;left: 0;top: 0;overflow: ;margin-top: 20px;}
+.header .mainmenu .logo {width: 100px;height: 25px;float: left;}
+.header .mainmenu .btn {float: left;margin-top: 5px;margin-left: 55px;}
+.header .mainmenu .btn input {color: #195dae;font-weight: 600;font-size: 18px;padding: 0 12px;cursor: pointer;background: none;border:1px solid #b2b2b2;border-radius: 3px;}
+
+
+.header .mainmenu nav {float: right;overflow: ;}
+.header .mainmenu nav > ul {overflow: ;margin-top: 3px;}
+.header .mainmenu nav > ul > li {float:left;position: relative;}
+.header .mainmenu nav > ul > li > a {display: inline-block;font-size: 22px;color: #555;padding: 0 24px;}
+.header .mainmenu nav > ul > li > a:hover {color: #ea8748;}
+.header .mainmenu nav .submenu {display: none;position: absolute;left: 50%;top: 40px;transform: translateX(-50%);padding: 10px;width: 155px;background: #fff;border:1px solid #ea8748;z-index: 3;}
+.header .mainmenu nav .submenu:before {
+    content: '';
+    position: absolute;
+    left: 50%;top:-6px;transform: translateX(-50%);    
+    width: 0;
+    height: 0;
+    border-width: 0 4px 6px;
+    border-style: solid;
+    border-color: #ea8748 transparent;
+    z-index: 1;
+}
+.header .mainmenu nav .submenu:after {
+    content: '';
+    position: absolute;
+    left: 50%;top:-5px;transform: translateX(-50%);    
+    width: 0;
+    height: 0;
+    border-width: 0 3px 5px;
+    border-style: solid;
+    border-color: #fff transparent;  
+    z-index: 2;
+}
+
+.header .mainmenu nav .submenu li {float:none;text-align: center;}
+.header .mainmenu nav .submenu li a {display: block;color: #888;padding: 8px 10px;font-size: 16px;}
+.header .mainmenu nav .submenu li a:hover {text-decoration: underline;}
+/* CONT1 */
+.content1 {margin: 50px 0;}
+.content1 .container {position: relative;}
+.content1 .slide {position: relative;}
+.content1 .slide slideImg {position: relative;width: 100%;}
+.content1 .slide slideImg img {display: block;}
+
+
+.content1 .go-wrap {position: absolute;left: 70px;top: 150px;}
+.content1 .go-wrap .go {padding-top: 15px;}
+.content1 .go-wrap .go a {color: #555; font-size: 14px;font-weight: 500;}
+.content1 .go-wrap .go a i {color: #0176be;}
+
+.content1 .go-wrap .gra-btn {width: 370px;height: 70px;background:linear-gradient(90deg,#e99244,#e56a27);padding: 30px 20px;margin: 20px 0;}
+.content1 .go-wrap .gra-btn .dl-wrap {margin: 0 auto;overflow: hidden;padding:0 0 0 30px;}
+.content1 .go-wrap .gra-btn dl {float: left;width: 90px;}
+.content1 .go-wrap .gra-btn dl:last-child {width: 140px;}
+.content1 .go-wrap .gra-btn dd a {color: #fff;font-size: 24px;}
+.content1 .go-wrap .gra-btn dd a i {font-size: 20px;}
+.content1 .go-wrap .menu ul {overflow: hidden;}
+.content1 .go-wrap .menu ul li {float: left;padding:0 5px;position: relative;}
+.content1 .go-wrap .menu ul li a {display: inline-block;color: #777;}
+.content1 .go-wrap .menu ul li:before {
+    content: '';
+    position: absolute;right: 0;top: 8px;
+    width: 1px;height: 5px;
+    background-color: #abacae;
+}
+.content1 .go-wrap .menu ul li:last-child:before {
+    background: none;
+}
+/* CONT2 */
+.content2 {width: 100%;background: #0076be;padding: 30px 0 40px 0;overflow: hidden;position: relative;}
+.content2 .container {padding: 0 20px;}
+.content2 h2 {color: #fff;font-size: 24px; font-weight: 500;}
+.content2 .goods {float: left;}
+.content2 .goods > ul {overflow:hidden ;width: 600px;padding: 20px 0;}
+.content2 .goods > ul > li {float: left;background: #0068b2;border-radius: 50%;width: 68px;height: 68px;text-align: center;margin: 5px 10px;padding: 10px;position: relative;}
+.content2 ul li a {color: #fff;}
+.content2 ul li a i{font-size: 40px;padding-top: 15px;color:rgba(255,255,255,0.9);}
+.content2 .txt  {position: absolute;bottom: -25px;left: 50%;transform: translateX(-50%);width: 100%;}
+
+/* CONT2-tabMenu */
+.content2 .event {width: 400px; float: left;overflow: hidden;margin: 20px 0;position: relative;margin-left: 20px;}
+.content2 .event .event_btn {width: 100%;}
+.content2 .event .event_btn ul li {background: rgba(255,255,255,0.7);height: 9px;width: 9px;border-radius: 50%;float: left;margin: 0 3px;cursor: pointer;}
+.content2 .event .event_btn li.active {background: #fff;}
+.content2 .event .event_cont div {width: 100%;position: relative;padding-top:50px;padding-left: 10px;color: #fff;font-size: 16px;letter-spacing: 0.5px;}
+.content2 .event .event_cont img {width: 95px;position: absolute;right: 65px;top: 25px;}
+.content2 .more_btn {position: absolute;right: 20px;top: 0;border:1px solid #80bbdf;width: 20px;height: 20px;background: none;}
+.more_btn .plus {position: relative;width: 20px;height: 20px;}
+.more_btn .plus:before{
+    content: '';
+    position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);
+    height: 10px;width: 1px;
+    background: #fff;
+}
+.more_btn .plus:after{
+    content: '';
+    position: absolute;left: 50%;top: 50%;;transform: translate(-50%,-50%);
+    width: 10px;height: 1px;
+    background: #fff;
+}
+/* CONTENT3 - cont1 */
+.content3 {overflow: hidden;}
+.content3 .cont1 {position: relative;padding: 40px 0;}
+.content3 .cont1 h2 {margin: 10px 0 20px 0; font-size: 24px;}
+.content3 .cont1 .more {position: absolute;right: 5px;top: 50px;}
+.content3 .cont1 ul {border:3px solid #e6e3e2;overflow: hidden;padding: 20px;}
+.content3 .cont1 ul li {float: left;font-size: 16px;text-align: center;margin: 0 40px;}
+.content3 .cont1 ul li a {display: block;color: #555;}
+.content3 .cont1 ul li i {margin-left: 10px;color: #969696;}
+.content3 .cont1 ul li:nth-child(6) {margin-right: 60px;}
+.content3 .cont1 ul li:nth-child(8) {margin-right: -3px;}
+
+/* CONTENT3 -cont2 */
+.content3 .cont2 {position: relative;width: 530px;float: left;}
+.content3 .cont2 ul {overflow: hidden;}
+.content3 .cont2 ul li {float: left;}
+.content3 .cont2 .cont2_btn ul li {width: 90px;text-align: center;font-size: 15px;}
+.content3 .cont2 .cont2_btn ul li a {display: block;padding: 5px;border:1px solid #bfc7d0;margin-right: -1px;background: #e0e8f0;color: #777;}
+.content3 .cont2 .cont2_btn ul li.active a {border-bottom: none;background: #fff;color: inherit;}
+
+.content3 .cont2 .cont2_cont ul {padding: 15px 5px;font-size: 14px;color: #777;}
+.content3 .cont2 .cont2_cont ul li.date {float: right;} 
+
+.content3 .more_btn {position: absolute;right: 4px;top: 6px;border:1px solid #777;width: 20px;height: 20px;background: none;}
+.content3 .more_btn .plus:before {
+   background: #777;
+}
+.content3 .more_btn .plus:after {
+    background: #777;
+}
+/* CONTENT3 -cont3 */
+.content3 .cont3 {float: left;padding:0 20px;width: 450px;}
+.content3 .cont3 h3 {font-size: 16px;padding-bottom:5px;margin-left: 35px;}
+.content3 .cont3 table {width: 85%;margin: 0 auto;}
+.content3 .cont3 td {padding: 3px 0;}
+.content3 .cont3 td a {color: #888;font-size: 15px;display: block;}
+
+/* CONTENT4 */
+.content4 {background: #f6fbfd;width: 100%;padding: 45px 0;margin-top: 30px;}
+.content4 h2 {font-size: 28px;font-weight: bold;}
+.content4 h2 span {color: #d88e32;}
+.content4 .rec {overflow: hidden;margin: 0 auto;padding: 20px 0;}
+.content4 .rec .box {
+    width: 180px;height: 220px;
+    float: left; margin-left: 30px;
+    text-align: center;
+    padding: 1rem;
+    color: #555;
+    font-size: 16px;
+}
+.content4 .rec .box h3 {font-size: 18px;color: #343434;}
+.content4 .rec .box span {padding: 3px 10px;border-radius: 15px; border:1px solid #6fb9e9;color: #3399d1;margin: 30px 0;display: inline-block;}
+.content4 .rec .box1 {background: #aadaff;}
+.content4 .rec .box2 {background: #7ae6e9;}
+
+/* FOOTER */
+footer {width: 100%;background: #777;padding: 30px 0;}
+footer ul {overflow: hidden;padding: 5px 0;color: #fff;}
+footer ul li {float: left;margin: 0 8px;}
+footer ul li a {color: #c2c2c2;}
+footer ul li a strong {color: #fff;font-weight: normal;}
+footer .tell li {display: inline-block;font-size: 14px;font-weight: normal;color: #c2c2c2;padding-top: 2px;}
+footer .tell .white {color: #fff;font-size: 15px;padding: 0;}
+footer .tell li em {font-size: 16px;}
+footer .icon {padding: 0 8px;}
+footer .icon a {display: inline-block; font-size: 20px; opacity: 0.8;color: #fff;margin-right: 6px;}
+
+
+
+
+
+
+
